@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Goethe FF Clan';
+    src: url('GoetheFFClan.eot');
+    src: url('GoetheFFClan.eot?#iefix') format('embedded-opentype'),
+        url('GoetheFFClan.woff2') format('woff2'),
+        url('GoetheFFClan.woff') format('woff'),
+        url('GoetheFFClan.ttf') format('truetype'),
+        url('GoetheFFClan.svg#GoetheFFClan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goethe FF Clan';
+    src: url('GoetheFFClan-Bold.eot');
+    src: url('GoetheFFClan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GoetheFFClan-Bold.woff2') format('woff2'),
+        url('GoetheFFClan-Bold.woff') format('woff'),
+        url('GoetheFFClan-Bold.ttf') format('truetype'),
+        url('GoetheFFClan-Bold.svg#GoetheFFClan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

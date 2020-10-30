@@ -1,17 +1,51 @@
+
 * {
   margin: 0;
   padding: 5px;
   box-sizing: border-box;
 }
+
+
+@font-face {
+    font-family: 'Goethe FF Clan';
+    src: url('assets/GoetheFFClan.eot');
+    src: url('assets/GoetheFFClan.eot?#iefix') format('embedded-opentype'),
+        url('assets/GoetheFFClan.woff2') format('woff2'),
+        url('assets/GoetheFFClan.woff') format('woff'),
+        url('assets/GoetheFFClan.ttf') format('truetype'),
+        url('assets/GoetheFFClan.svg#GoetheFFClan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goethe FF Clan';
+    src: url('assets/GoetheFFClan-Bold.eot');
+    src: url('assets/GoetheFFClan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/GoetheFFClan-Bold.woff2') format('woff2'),
+        url('assets/GoetheFFClan-Bold.woff') format('woff'),
+        url('assets/GoetheFFClan-Bold.ttf') format('truetype'),
+        url('assets/GoetheFFClan-Bold.svg#GoetheFFClan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body{
   /* margin: 20px;
   padding: 0; */
   /* height: 100%; */
   /* display: flex; */
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Goethe FF Clan';
+  font-weight: normal;
+  font-style: normal;
   font-size: 90%;
   color: #333;
 }
+
+
 
 .row::after {
   content: "";
@@ -23,6 +57,9 @@ body{
 .header{
   /* border: 1px solid red; */
   padding: 10px;
+  font-family: 'Goethe FF Clan';
+    font-weight: bold;
+    font-style: normal;
 }
 .wrapper0{
   width: 30%;
@@ -35,7 +72,7 @@ body{
     float: left;
     padding: 10px;
     /* border: 1px solid red; */
-    max-height: 400px;
+    max-height: 300px;
     max-width: 40%%;
     overflow-x:auto;
 }
@@ -45,7 +82,7 @@ body{
     float: left;
     padding: 10px;
     /* border: 1px solid red; */
-    max-height: 400px;
+    max-height: 300px;
     max-width: 30%;
     overflow-x:auto;
 }
@@ -55,7 +92,7 @@ body{
     float: left;
     padding: 10px;
     /* border: 1px solid red; */
-    max-height: 200px;
+    max-height: 150px;
     max-width: 30%;
     overflow-x:auto;
 }
@@ -93,7 +130,7 @@ table, td, th {
  }
 
 th {
-  background-color: rgba(150, 150, 150, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
   position: sticky;
   padding:10px;
   top: -1px;
@@ -104,6 +141,7 @@ th {
     z-index: 3;
   }
 }
+
 td:hover {background-color:#f5f5f5;}
 
 ::-webkit-scrollbar {
@@ -124,6 +162,26 @@ width: 10px;
   background: #555;
 }
 
-a:link{
+
+a:link {
+  color: red;
   text-decoration: none;
+  font-family: 'Goethe FF Clan';
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
