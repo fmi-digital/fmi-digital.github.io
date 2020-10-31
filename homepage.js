@@ -59,10 +59,12 @@ function draw(){
   //
   for (let i = 0; i < div; i++){
       let r = random(0, 1000);
-      stroke(5, 9, 255, 15);
+      let t = random(0, 8);
+      strokeWeight(t);
+      stroke(5, 9, 255, 5);
       noFill();
       ellipse(mouseX + i, mouseY + i, r, r);
-      stroke(52, 52, 54, 15);
+      stroke(52, 52, 54, 5);
       noFill();
       ellipse(width - (mouseX + i), height - (mouseY + i), r, r);
       // stroke(52, 52, 54, 20);
