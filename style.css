@@ -58,8 +58,9 @@ body{
   /* border: 1px solid red; */
   padding: 10px;
   font-family: 'Goethe FF Clan';
-    font-weight: bold;
-    font-style: normal;
+  font-weight: bold;
+  font-style: normal;
+  border-bottom: 2px solid #ddd;;
 }
 .wrapper0{
   width: 30%;
@@ -93,7 +94,7 @@ body{
     padding: 10px;
     /* border: 1px solid red; */
     max-height: 150px;
-    max-width: 30%;
+    max-width: 35%;
     overflow-x:auto;
 }
 
@@ -102,6 +103,7 @@ body{
   width:10%;
   padding: 15px;
   float: left;
+  border-top: 2px solid #ddd;;
 }
 
 .footer2{
@@ -110,19 +112,21 @@ body{
   padding-left: 50px;
   padding-right: 50px;
   float: left;
+  border-top: 2px solid #ddd;;
 }
 
 .footer3{
   width:10%;
   padding: 15px;
   float: left;
+  border-top: 2px solid #ddd;;
 }
 
 table, td, th {
-  border: 5px solid #ddd;
+  border: 2px solid #ddd;
   padding: 10px;
   table-layout: auto;
-  border-collapse: collapse;
+  border-collapse: separate;
   text-align: center;
   vertical-align: top;
   empty-cells: hide;
@@ -142,14 +146,15 @@ th {
   }
 }
 
-td:hover {background-color:#f5f5f5;}
+td:hover {background-color:rgba(222, 222, 255, 0.5);}
 
 ::-webkit-scrollbar {
-width: 10px;
+width: 8px;
+height: 8px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(150, 150, 150, 0.75);
+  background: rgba(150, 150, 150, 0.5);
 }
 
 /* Handle */
@@ -159,12 +164,13 @@ width: 10px;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* background: #555; */
+  background: rgba(150, 150, 150, 0.5);
 }
 
 
 a:link {
-  color: red;
+  color: rgba(100, 100, 100);
   text-decoration: none;
   font-family: 'Goethe FF Clan';
     font-weight: bold;
@@ -173,7 +179,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: rgba(100, 100, 100);
 }
 
 /* mouse over link */

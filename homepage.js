@@ -29,7 +29,7 @@
 // liveTable.rows[0].cells.style('background-color', 'blue');
 // }
 let r1, g1, b1, r2, g2, b2;
-let div = 100;
+let div = 50;
 
 let canvas;
 function setup(){
@@ -48,14 +48,47 @@ function setup(){
 function draw(){
   background(255);
 
-  noStroke();
-  fill(120, 150, 100);
-  ellipse(mouseX, mouseY, 1000, 1000);
-  for (let i = 0; i < 100; i++){
-    // strokeWeight(1);
-    fill(r1 + ((r2 - r1)/div)*i, g1 + ((g2 - g1)/div)*i, b1 + ((b2 - b1)/div)*i);
-    noStroke();
-    rect(0,i + i*height/div, width, height/div);
-    }
+//
+// for (let i = 0; i < 5; i++){
+//   if (i )
+// }
+
+
+  // ellipse(mouseX, mouseY, 200, 200);
+
+  //
+  for (let i = 0; i < div; i++){
+      let r = random(0, 1000);
+      stroke(5, 9, 255, 25);
+      noFill();
+      ellipse(mouseX + i, mouseY + i, r, r);
+      stroke(52, 52, 54, 25);
+      noFill();
+      ellipse(width - (mouseX + i), height - (mouseY + i), r, r);
+      // stroke(52, 52, 54, 20);
+      // noFill();
+      // ellipse(r, r, r, r);
+
+    // else if (i % 20 == 0){
+    //   stroke(200, i);
+    //   noFill();
+    //   // strokeWeight(10);
+    //   ellipse(mouseX + i, mouseY + i, r, r);
+    //   console.log(i);
+    // }
+    // else{
+    //   stroke(200, i);
+    //   noFill();
+    //   ellipse(mouseX + i, mouseY + i, r, r);
+    // }
+
+  }
+// div++;
+//
+// if (div == 500){
+//   div = 0;
+// }
+
+
 
 }
