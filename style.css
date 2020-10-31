@@ -63,9 +63,10 @@ body{
   border-bottom: 2px solid #ddd;;
 }
 .wrapper0{
-  width: 30%;
+  width: 100%;
   float: left;
   padding: 10px;
+  text-align: center;
   /* border: 1px solid red; */
 }
 .wrapper1{
@@ -93,8 +94,8 @@ body{
     float: left;
     padding: 10px;
     /* border: 1px solid red; */
-    max-height: 150px;
-    max-width: 35%;
+    max-height: 300px;
+    max-width: 30%;
     overflow-x:auto;
 }
 
@@ -170,7 +171,7 @@ height: 8px;
 
 
 a:link {
-  color: rgba(100, 100, 100);
+  color: rgba(0, 174, 239);
   text-decoration: none;
   font-family: 'Goethe FF Clan';
     font-weight: bold;
